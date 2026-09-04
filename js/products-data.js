@@ -100,5 +100,62 @@ window.ScanAIProducts = [
       { label: "Workflow", value: "Rapid Ward & ICU Imaging" }
     ],
     detailedDescription: "The ScanAI Mobile Portable X-Ray system is designed for effortless mobility between hospital departments. Its versatile articulated arm allows precise positioning for non-ambulatory and intensive care patients."
+  },
+  {
+    id: "omni-rovis",
+    name: "Omni Rovis",
+    tagline: "Autonomous Fluoroscopy Navigation & Motion Compensation",
+    category: "surgical-ai",
+    categoryLabel: "Surgical AI & Navigation",
+    image: "./assets/omni_rovis_cockpit.png",
+    altImage: "./assets/omni_rovis_icon.png",
+    badge: "Pre-Clinical Navigation",
+    externalUrl: "https://rovis.omniide.com/",
+    description: "An intelligent surgical motion-compensation co-pilot that locks onto anatomical targets in real time and automates radiation shielding during complex interventional fluoroscopy and ERCP.",
+    verifiedFeatures: [
+      "Up to 78% radiation reduction via modeled ALARA dynamic collimation",
+      "< 0.5 mm mean tracking error across benchmark pilot datasets",
+      "< 14 ms unified multi-task vision inference latency",
+      "TruBlock zero-OEM-tampering retrofittable lead shutter collimator",
+      "Pulse-recalibrated optical flow + respiratory cycle kinematics"
+    ],
+    technicalHighlights: [
+      { label: "Modality", value: "Interventional Fluoroscopy & ERCP" },
+      { label: "Tracking Error", value: "< 0.5 mm Mean Target Lock" },
+      { label: "Radiation Reduction", value: "Up to 78% (Modeled ALARA)" },
+      { label: "Inference Latency", value: "< 14 ms Real-Time Fusion" },
+      { label: "Hardware Add-on", value: "TruBlock Actuated Collimator" },
+      { label: "Regulatory Status", value: "Pre-Clinical Research Platform" }
+    ],
+    detailedDescription: "Omni Rovis is a pre-clinical AI surgical motion compensation platform engineered for interventional fluoroscopy and complex biliary/ERCP procedures. It continuously eliminates respiratory drift and voluntary motion, enabling continuous target lock and automated radiation shuttering without interrupting surgeon workflow."
+  },
+  {
+    id: "arogya-omni",
+    name: "Arogya Omni",
+    tagline: "ABDM M1–M4 Hospital OS & AI NHCX Claims Engine",
+    category: "hospital-os",
+    categoryLabel: "Hospital OS & Exchange",
+    image: "./assets/arogya_omni_dashboard.jpg",
+    altImage: "./assets/arogya_omni_logo.png",
+    badge: "Hospital OS",
+    externalUrl: "https://arogya.omniide.com/",
+    description: "Full-stack hospital operating system certified for Ayushman Bharat Digital Mission (ABDM M1–M4) and real-time National Health Claims Exchange (NHCX) insurance adjudication.",
+    verifiedFeatures: [
+      "ABDM M1–M4 certified (ABHA Identity, HIP/HIU Health Records, Consent, HFR/HPR)",
+      "National Health Claims Exchange (NHCX) AI pre-authorization & claims engine",
+      "Automated NPPA tariff compliance and medical necessity validation",
+      "Enterprise OPD/IPD bed telemetry, digital e-prescriptions & SNOMED CT coding",
+      "NRCES NDHM FHIR R4 care context bundle generation"
+    ],
+    technicalHighlights: [
+      { label: "Standard", value: "ABDM Milestone 1–4 Certified" },
+      { label: "Exchange", value: "NHCX Real-Time Insurance Gateway" },
+      { label: "Data Format", value: "NRCES NDHM FHIR R4 Bundles" },
+      { label: "Clinical Core", value: "OPD/IPD Bed Command Center" },
+      { label: "Billing", value: "NPPA Automated Tariff Compliance" },
+      { label: "Platform", value: "Cloud-Native Hospital OS" }
+    ],
+    detailedDescription: "Arogya Omni is an enterprise hospital operating system that unifies hospital administration, clinical care contexts, and healthcare financing under India's national health stack. It automates ABHA patient enrollment, NRCES FHIR R4 medical records, and instantaneous NHCX cashless claims routing across major insurers."
   }
 ];
+

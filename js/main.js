@@ -244,9 +244,16 @@ function initProductCatalog() {
             <button class="btn btn-secondary btn-sm view-specs-btn" data-product-id="${product.id}">
               Specifications
             </button>
-            <button class="btn btn-primary btn-sm catalog-inquire-btn" data-product-name="${product.name}" data-specialty="${product.category === 'ecg' ? 'Cardiology' : 'Radiology'}">
-              Inquire
-            </button>
+            ${product.externalUrl ? `
+              <a href="${product.externalUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="display: inline-flex; align-items: center; gap: 4px;">
+                <span>Visit Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            ` : `
+              <button class="btn btn-primary btn-sm catalog-inquire-btn" data-product-name="${product.name}" data-specialty="${product.category === 'ecg' ? 'Cardiology' : 'Radiology'}">
+                Inquire
+              </button>
+            `}
           </div>
         </div>
       </div>
