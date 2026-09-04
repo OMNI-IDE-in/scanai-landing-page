@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinical Consultation & Demo Scheduling — ScanAI</title>
+  <meta name="description" content="Connect with ScanAI clinical specialists to request equipment demonstrations, clinical evaluation units, or technical integration details." />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="ScanAI Home">
+        <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="./index.html#hardware" class="nav-link">Medical Hardware</a></li>
+          <li><a href="./index.html#architecture" class="nav-link">Platform Architecture</a></li>
+          <li><a href="./index.html#mobile" class="nav-link">Mobile Suite</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="./contact.html" class="nav-text-link active" style="color: var(--color-brand); font-weight: 600;">Contact</a>
+        <a href="./products.html" class="nav-text-link">Catalog</a>
+        <a href="./contact.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 32px;" />
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html#solutions">Clinical Solutions</a></li>
+      <li><a href="./index.html#hardware">Medical Hardware</a></li>
+      <li><a href="./index.html#architecture">Platform Architecture</a></li>
+      <li><a href="./index.html#mobile">Mobile Suite</a></li>
+      <li><a href="./products.html">Equipment Catalog</a></li>
+      <li><a href="./about.html">About ScanAI</a></li>
+      <li><a href="./contact.html">Contact & Support</a></li>
+    </ul>
+
+    <div style="margin-top: auto;">
+      <a href="./contact.html" class="btn btn-primary" style="width: 100%;">Schedule Clinical Demo</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop"></div>
+
+  <!-- Page Header -->
+  <section style="padding: 130px 0 56px 0; background: #ffffff; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container text-center">
+      <div class="eyebrow-tag">Clinical Communications</div>
+      <h1 style="margin-bottom: 16px;">Request Clinical Demonstration</h1>
+      <p class="text-lead" style="max-width: 640px; margin: 0 auto;">
+        Speak directly with our clinical application specialists to coordinate equipment trials, PACS workflow integration, or product inquiries.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-box">
+          <div class="contact-meta-card">
+            <h4>Direct Clinical Inquiries</h4>
+            <p style="margin-bottom: 12px;">We coordinate equipment reviews, trials, and technical workflow discussions for hospitals, emergency facilities, and medical clinics.</p>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+              <a href="mailto:hello@scanai.health" style="font-size: 0.95rem; font-weight: 600; color: var(--color-brand); display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@scanai.health
+              </a>
+              <a href="tel:8792126143" style="font-size: 0.95rem; font-weight: 600; color: var(--color-primary); display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                8792126143
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-meta-card">
+            <h4>Institutional Response</h4>
+            <p>Direct inquiries from clinical departments receive an evaluation response from our biomedical application team within 24 business hours.</p>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="clinicalDemoForm" novalidate>
+            <input type="hidden" name="access_key" value="c45f9a0c-53cf-44dc-8397-5c2b0424114e" />
+            <input type="hidden" name="subject" value="New Clinical Demo Request - ScanAI Contact Page" />
+            <input type="hidden" name="from_name" value="ScanAI Contact Portal" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formFullName" class="form-label">
+                  Clinician / Contact Name <span class="required">*</span>
+                </label>
+                <input type="text" id="formFullName" name="name" class="form-control" placeholder="Dr. Sarah Jenkins" required />
+                <div class="form-error-msg" id="errorFullName">Please provide your full clinical or professional name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="formWorkEmail" class="form-label">
+                  Professional Email <span class="required">*</span>
+                </label>
+                <input type="email" id="formWorkEmail" name="email" class="form-control" placeholder="s.jenkins@healthsystem.org" required />
+                <div class="form-error-msg" id="errorWorkEmail">Please provide a valid professional email address.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formInstitution" class="form-label">
+                  Hospital / Institution <span class="required">*</span>
+                </label>
+                <input type="text" id="formInstitution" name="institution" class="form-control" placeholder="Memorial Health Hospital" required />
+                <div class="form-error-msg" id="errorInstitution">Please provide your hospital or practice name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="formSpecialty" class="form-label">Department / Modality</label>
+                <select id="formSpecialty" name="specialty" class="form-control">
+                  <option value="Cardiology / 12-Lead ECG">Cardiology / 12-Lead ECG</option>
+                  <option value="Radiology & Imaging">Radiology & Imaging</option>
+                  <option value="Emergency & Inpatient Care">Emergency & Inpatient Care</option>
+                  <option value="Primary Care Practice">Primary Care Practice</option>
+                  <option value="Biomedical Engineering">Biomedical Engineering</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">
+                Evaluation Goals & Inquiries <span class="required">*</span>
+              </label>
+              <textarea id="formMessage" name="message" rows="5" class="form-control" placeholder="Please describe your clinical evaluation interests, facility department, or hardware inquiry..." required></textarea>
+              <div class="form-error-msg" id="errorMessage">Please provide inquiry details (minimum 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Submit Demonstration Request</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-summary">
+          <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+          <p>ScanAI develops connected electrocardiographs, digital radiography systems, and clinical workflow software for medical professionals.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Clinical Hardware</h4>
+          <ul>
+            <li><a href="./products.html">ScanAI ECG 12</a></li>
+            <li><a href="./products.html">ScanAI ECG Pro</a></li>
+            <li><a href="./products.html">ScanAI X-Ray Pro</a></li>
+            <li><a href="./products.html">Mobile Portable X-Ray</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="./index.html">Platform Overview</a></li>
+            <li><a href="./about.html">About ScanAI</a></li>
+            <li><a href="./contact.html">Request Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Inquiries</h4>
+          <ul>
+            <li><a href="mailto:hello@scanai.health">hello@scanai.health</a></li>
+            <li><a href="tel:8792126143">+91 8792126143</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 ScanAI Healthcare Technologies. All rights reserved.</div>
+        <div><a href="./contact.html">Clinical Support</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

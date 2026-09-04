@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ScanAI — Clinical Mission & Diagnostic Technology</title>
+  <meta name="description" content="Learn about ScanAI's mission to bring clinical-grade point-of-care diagnostics and connected imaging to healthcare providers." />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="ScanAI Home">
+        <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="./index.html#hardware" class="nav-link">Medical Hardware</a></li>
+          <li><a href="./index.html#architecture" class="nav-link">Platform Architecture</a></li>
+          <li><a href="./index.html#mobile" class="nav-link">Mobile Suite</a></li>
+          <li><a href="./about.html" class="nav-link active" style="color: var(--color-brand); font-weight: 600;">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="./contact.html" class="nav-text-link">Contact</a>
+        <a href="./products.html" class="nav-text-link">Catalog</a>
+        <a href="./contact.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 32px;" />
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html#solutions">Clinical Solutions</a></li>
+      <li><a href="./index.html#hardware">Medical Hardware</a></li>
+      <li><a href="./index.html#architecture">Platform Architecture</a></li>
+      <li><a href="./index.html#mobile">Mobile Suite</a></li>
+      <li><a href="./products.html">Equipment Catalog</a></li>
+      <li><a href="./about.html">About ScanAI</a></li>
+      <li><a href="./contact.html">Contact & Support</a></li>
+    </ul>
+
+    <div style="margin-top: auto;">
+      <a href="./contact.html" class="btn btn-primary" style="width: 100%;">Schedule Clinical Demo</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop"></div>
+
+  <!-- Page Header -->
+  <section style="padding: 130px 0 56px 0; background: #ffffff; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container text-center">
+      <div class="eyebrow-tag">Clinical Mission</div>
+      <h1 style="margin-bottom: 16px;">Advancing Point-of-Care Diagnostics</h1>
+      <p class="text-lead" style="max-width: 680px; margin: 0 auto;">
+        ScanAI is committed to making medical diagnostics faster, more accessible, and seamlessly connected for clinicians worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Split Section -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center;">
+        <div>
+          <div class="eyebrow-tag">Our Vision</div>
+          <h2 style="margin-bottom: 20px;">Designed to Assist, Not Replace</h2>
+          <p class="text-lead" style="margin-bottom: 18px;">
+            Modern healthcare demands immediate diagnostic insight where care actually happens—at the patient bedside, emergency room, or outpatient clinic.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+            ScanAI engineers portable diagnostic hardware and connected clinical software that give physicians reliable tools for cardiac rhythm monitoring and digital radiography. We believe technology should reduce administrative friction and support clinicians in making timely clinical decisions.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="./contact.html" class="btn btn-primary">Schedule a Demo</a>
+            <a href="./products.html" class="btn btn-secondary">Explore Hardware</a>
+          </div>
+        </div>
+
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: var(--shadow-sm); height: 340px;">
+          <img src="./assets/service2.jpg" alt="Clinician reviewing diagnostic telemetry" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Principles Section -->
+  <section class="section section-subtle">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Engineering Focus</div>
+        <h2 class="section-title">Core Principles of Our Technology</h2>
+        <p class="section-subtitle">The foundational standards guiding our medical devices and software development.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
+          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Point-of-Care Portability</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Engineering hardware that is lightweight and robust enough to deploy rapidly anywhere patients require diagnostic evaluation.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
+          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Clinical Integration</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Building upon standard healthcare protocols like DICOM to ensure images and telemetry flow smoothly into existing hospital archives.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
+          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Physician-Centered Design</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Providing clear diagnostic support and intuitive interfaces so clinical teams spend less time configuring systems and more time with patients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-summary">
+          <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+          <p>ScanAI develops connected electrocardiographs, digital radiography systems, and clinical workflow software for medical professionals.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Clinical Modalities</h4>
+          <ul>
+            <li><a href="./index.html#solutions">12-Lead ECG Telemetry</a></li>
+            <li><a href="./index.html#solutions">Digital Radiography</a></li>
+            <li><a href="./index.html#solutions">PACS Synchronization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="./index.html">Platform Overview</a></li>
+            <li><a href="./products.html">Equipment Catalog</a></li>
+            <li><a href="./contact.html">Request Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Inquiries</h4>
+          <ul>
+            <li><a href="mailto:hello@scanai.health">hello@scanai.health</a></li>
+            <li><a href="tel:8792126143">+91 8792126143</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 ScanAI Healthcare Technologies. All rights reserved.</div>
+        <div><a href="./contact.html">Clinical Support</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+/**
+ * ScanAI Medical Technology - Responsive Stylesheet (responsive.css)
+ * Complete mobile responsiveness: 320px, 375px, 390px, 414px, 768px, 1024px, 1440px
+ * Strict ZERO horizontal overflow guarantee.
+ * Zero unwanted gaps below sticky header.
+ */
+
+/* ==========================================================================
+   Zero Horizontal Overflow Safety
+   ========================================================================== */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Desktop / Large Tablet (max-width: 1080px)
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .hero-grid {
+    gap: 36px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .architecture-diagram-container {
+    gap: 12px;
+  }
+
+  .arch-node {
+    flex: 1 1 calc(50% - 12px);
+  }
+}
+
+/* ==========================================================================
+   Tablet & Mobile Breakpoint (max-width: 900px)
+   Hero collapses cleanly into single column with zero gap under navbar
+   ========================================================================== */
+@media (max-width: 900px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  /* Hero Section: 1-Column Stacking */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding-top: 14px !important;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 620px;
+  }
+
+  .hero-kicker-apple {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .hero-headline-apple {
+    font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .hero-lead-apple {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+  }
+
+  .hero-cta-group-apple {
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .trust-flex {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .hero-device-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  /* Segmented Solutions */
+  .segment-panel {
+    grid-template-columns: 1fr;
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .segment-media-frame {
+    height: 240px;
+    order: -1;
+  }
+
+  /* Hardware Editorial */
+  .hardware-editorial-item,
+  .hardware-editorial-item.reversed {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 36px;
+  }
+
+  .hardware-image-canvas {
+    height: 280px;
+    padding: 32px;
+  }
+
+  /* Mobile Suite */
+  .mobile-suite-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Product Modal */
+  .modal-product-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .modal-image-box {
+    height: 200px;
+  }
+}
+
+/* ==========================================================================
+   Small Tablet & Mobile (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .site-header {
+    height: 68px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-menu,
+  .nav-actions {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Clean minimal gap below header on mobile so phone top is not cut off */
+  .hero-section {
+    padding-top: calc(var(--header-height) + 12px) !important;
+    padding-bottom: 44px !important;
+  }
+
+  .hero-cta-group-apple {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn-apple-primary,
+  .btn-apple-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+  }
+
+  .trust-flex {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .segmented-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .segment-btn {
+    width: 100%;
+    text-align: center;
+    min-height: 44px;
+  }
+
+  .arch-node {
+    flex: 1 1 100%;
+  }
+
+  .hardware-specs-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hardware-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form-panel {
+    padding: 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* ==========================================================================
+   Mobile Handsets (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-headline-apple {
+    font-size: 2.1rem;
+    line-height: 1.12;
+  }
+
+  /* Phone Mockup Proportions for Mobile Screens */
+  .device-phone {
+    width: 250px !important;
+    height: 450px !important;
+    border-radius: 38px !important;
+  }
+
+  .phone-screen-video {
+    border-radius: 34px !important;
+  }
+
+  .device-notch {
+    width: 76px !important;
+    height: 20px !important;
+  }
+
+  .video-floating-bar {
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+  }
+
+  .v-btn {
+    padding: 5px 10px !important;
+    font-size: 0.68rem !important;
+  }
+
+  .hero-tech-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .tech-divider {
+    display: none;
+  }
+
+  .segment-panel {
+    padding: 20px 16px;
+  }
+
+  .hardware-image-canvas {
+    height: 220px;
+    padding: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .cinematic-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .modal-card {
+    padding: 0;
+  }
+
+  .modal-body,
+  .modal-header,
+  .modal-footer {
+    padding: 16px;
+  }
+}
+
+/* ==========================================================================
+   Small Mobile Handsets (max-width: 360px)
+   ========================================================================== */
+@media (max-width: 360px) {
+  .device-phone {
+    width: 225px !important;
+    height: 405px !important;
+    border-radius: 34px !important;
+  }
+
+  .phone-screen-video {
+    border-radius: 30px !important;
+  }
+
+  .hero-headline-apple {
+    font-size: 1.85rem;
+  }
+}

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScanAI — Clinical AI & Point-of-Care Diagnostic Systems</title>
+  <meta name="description" content="ScanAI unifies clinical-grade artificial intelligence with portable 12-lead ECGs and digital radiography systems for hospitals, clinics, and emergency care." />
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="ScanAI — Clinical AI & Point-of-Care Diagnostic Systems" />
+  <meta property="og:description" content="AI-assisted diagnostic imaging and portable 12-lead ECG systems for modern clinical practice." />
+  <meta property="og:image" content="./assets/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+
+  <!-- Single Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Enterprise Navigation Header
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="ScanAI Home">
+        <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#hardware" class="nav-link">Medical Hardware</a></li>
+          <li><a href="#architecture" class="nav-link">Platform Architecture</a></li>
+          <li><a href="#mobile" class="nav-link">Mobile Suite</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <a href="./contact.html" class="nav-text-link">Contact</a>
+        <a href="./products.html" class="nav-text-link">Catalog</a>
+        <a href="#contact" class="btn-nav-cta">
+          <span>Book a Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 32px;" />
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#solutions">Clinical Solutions</a></li>
+      <li><a href="#hardware">Medical Hardware</a></li>
+      <li><a href="#architecture">Platform Architecture</a></li>
+      <li><a href="#mobile">Mobile Suite</a></li>
+      <li><a href="./products.html">Equipment Catalog</a></li>
+      <li><a href="./about.html">About ScanAI</a></li>
+      <li><a href="#contact">Contact & Inquiries</a></li>
+    </ul>
+
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Request Clinical Demo</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- ========================================================================
+       2. Asymmetric Clinical Hero Section
+       ======================================================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left: Apple-Grade Product Typography & Actions -->
+        <div class="hero-content">
+          <div class="hero-kicker-apple">
+            <span class="kicker-bullet"></span>
+            <span>CONNECTED DIAGNOSTICS &amp; POINT-OF-CARE AI</span>
+          </div>
+
+          <h1 class="hero-headline-apple">
+            Intelligence at the point of care.
+          </h1>
+
+          <p class="hero-lead-apple">
+            ScanAI brings clinical-grade artificial intelligence, portable diagnostics, and connected imaging into a unified care platform.
+          </p>
+
+          <div class="hero-cta-group-apple">
+            <a href="#contact" class="btn-apple-primary">
+              <span>Request a Clinical Demo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#architecture" class="btn-apple-secondary">
+              <span>Explore Platform Architecture</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Smartphone Mockup Hosting the Real Video -->
+        <div class="hero-device-wrapper" id="heroDeviceWrapper">
+          <div class="device-phone">
+            <!-- Dynamic Island Notch -->
+            <div class="device-notch" aria-hidden="true">
+              <div class="notch-camera"></div>
+              <div class="notch-sensor"></div>
+            </div>
+
+            <!-- Glass Specular Highlight -->
+            <div class="device-glare" aria-hidden="true"></div>
+
+            <!-- Phone Screen Hosting the Real ScanAI Video -->
+            <div class="phone-screen-video">
+              <video id="heroVideo" autoplay loop muted playsinline poster="./assets/bg1.jpg" title="ScanAI Point-of-Care Demonstration">
+                <source src="./assets/scan_ai_video.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video playback.
+              </video>
+
+              <!-- Floating Video Play / Mute Control Overlay -->
+              <div class="video-floating-bar">
+                <button class="v-btn" id="heroPlayBtn" aria-label="Pause Video" title="Pause / Play Video" type="button">
+                  <svg id="heroPlayIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                  <span id="heroPlayText">Pause</span>
+                </button>
+                <button class="v-btn" id="heroMuteBtn" aria-label="Unmute Video" title="Unmute / Mute Audio" type="button">
+                  <svg id="heroMuteIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                  <span id="heroMuteText">Unmute</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. Clinical Modality & Infrastructure Focus Strip
+       ======================================================================== -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-flex">
+        <div class="trust-item">
+          <span class="trust-pillar-tag">Cardiology</span>
+          <h4>12-Lead ECG Telemetry</h4>
+          <p>Continuous diagnostic waveform streaming &amp; multi-lead cardiac acquisition.</p>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-pillar-tag">Radiography</span>
+          <h4>Digital Thoracic X-Ray</h4>
+          <p>Handheld and mobile bedside radiography engineered for swift triage.</p>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-pillar-tag">Interoperability</span>
+          <h4>Hospital PACS Integration</h4>
+          <p>Standardized DICOM image export and bidirectional health network synchronization.</p>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-pillar-tag">Point-of-Care</span>
+          <h4>Connected Mobile Suite</h4>
+          <p>Unified physician diagnostic suite deployed on iOS and Android devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       5. Platform Architecture Section ("One Intelligence Layer")
+       ======================================================================== -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Enterprise Architecture</div>
+        <h2 class="section-title">One Intelligence Layer. Multiple Diagnostic Modalities.</h2>
+        <p class="section-subtitle">
+          How ScanAI connects medical devices, automated analytical processing, and healthcare infrastructure into a cohesive diagnostic pipeline.
+        </p>
+      </div>
+
+      <div class="architecture-diagram-container">
+        <div class="arch-node">
+          <span class="arch-node-step">Stage 01</span>
+          <h4 class="arch-node-title">Patient Encounter</h4>
+          <p class="arch-node-desc">Bedside evaluation, clinic consultation, or emergency department triage.</p>
+        </div>
+
+        <div class="arch-node">
+          <span class="arch-node-step">Stage 02</span>
+          <h4 class="arch-node-title">Diagnostic Hardware</h4>
+          <p class="arch-node-desc">Rapid acquisition using ScanAI ECG 12 or X-Ray Pro handheld systems.</p>
+        </div>
+
+        <div class="arch-node">
+          <span class="arch-node-step">Stage 03</span>
+          <h4 class="arch-node-title">ScanAI Intelligence</h4>
+          <p class="arch-node-desc">Edge waveform analysis and image processing for clinical assistance.</p>
+        </div>
+
+        <div class="arch-node">
+          <span class="arch-node-step">Stage 04</span>
+          <h4 class="arch-node-title">Connected Workflow</h4>
+          <p class="arch-node-desc">Instant digital reports, mobile visualization, and clinical data synchronization.</p>
+        </div>
+
+        <div class="arch-node">
+          <span class="arch-node-step">Stage 05</span>
+          <h4 class="arch-node-title">Hospital PACS & EHR</h4>
+          <p class="arch-node-desc">DICOM image archiving and clinical record integration for long-term tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. Clinical Capabilities (Segmented Suite)
+       ======================================================================== -->
+  <section class="section section-subtle" id="solutions">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Diagnostic Capabilities</div>
+        <h2 class="section-title">Comprehensive Clinical Modalities</h2>
+        <p class="section-subtitle">
+          Engineered to assist clinicians with reliable point-of-care cardiac tracking, digital radiography, and connected dataflow.
+        </p>
+      </div>
+
+      <div class="segmented-nav-wrapper">
+        <div class="segmented-nav" role="tablist">
+          <button class="segment-btn active" data-segment="seg-pulmonary">Thoracic Imaging</button>
+          <button class="segment-btn" data-segment="seg-cardio">12-Lead ECG</button>
+          <button class="segment-btn" data-segment="seg-xray">Handheld Radiography</button>
+          <button class="segment-btn" data-segment="seg-cloud">PACS & Cloud Vault</button>
+        </div>
+      </div>
+
+      <!-- Segment 1: Thoracic Imaging -->
+      <div class="segment-panel active" id="seg-pulmonary">
+        <div class="segment-details">
+          <h3>Thoracic & Radiographic Analysis</h3>
+          <p>
+            ScanAI assists physicians in reviewing chest radiographs, providing fast visual assessment tools and structured digital reporting directly at the reading station.
+          </p>
+          <ul class="verified-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>High-resolution digital radiograph visualization and anatomical review.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated reporting tools designed to accelerate clinical documentation.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Seamless export into hospital imaging archives and patient records.</span>
+            </li>
+          </ul>
+          <a href="./contact.html" class="arrow-link">
+            <span>Request Clinical Information</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="segment-media-frame">
+          <img src="./assets/service1.jpg" alt="Clinical Radiograph Review" />
+          <div class="segment-media-caption">Thoracic Imaging Review</div>
+        </div>
+      </div>
+
+      <!-- Segment 2: 12-Lead ECG -->
+      <div class="segment-panel" id="seg-cardio">
+        <div class="segment-details">
+          <h3>12-Lead Real-Time Arrhythmia Telemetry</h3>
+          <p>
+            Continuous multi-lead electrocardiography designed for outpatient practices, emergency triage, and inpatient bedside monitoring.
+          </p>
+          <ul class="verified-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Simultaneous 12-lead acquisition for comprehensive cardiac rhythm tracking.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Real-time waveform streaming to connected clinician tablets and workstations.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Instant digital archive generation for physician consultation and review.</span>
+            </li>
+          </ul>
+          <a href="#hardware" class="arrow-link">
+            <span>Explore Cardia Hardware</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="segment-media-frame">
+          <img src="./assets/service2.jpg" alt="Cardiac Telemetry Waveform" />
+          <div class="segment-media-caption">12-Lead ECG Monitoring</div>
+        </div>
+      </div>
+
+      <!-- Segment 3: Handheld Radiography -->
+      <div class="segment-panel" id="seg-xray">
+        <div class="segment-details">
+          <h3>Bedside & Field Digital Radiography</h3>
+          <p>
+            Bring diagnostic imaging directly to patients who cannot be easily transported to central radiology departments.
+          </p>
+          <ul class="verified-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Lightweight handheld form factor designed for emergency and bedside agility.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Integrated shielding designed to protect clinical operators during exposure.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Rapid digital image transmission directly to reviewing physicians.</span>
+            </li>
+          </ul>
+          <a href="#hardware" class="arrow-link">
+            <span>Explore X-Ray Systems</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="segment-media-frame">
+          <img src="./assets/xray_handheld.jpeg" alt="ScanAI Handheld X-Ray System" />
+          <div class="segment-media-caption">Point-of-Care Radiography</div>
+        </div>
+      </div>
+
+      <!-- Segment 4: PACS & Cloud Vault -->
+      <div class="segment-panel" id="seg-cloud">
+        <div class="segment-details">
+          <h3>DICOM PACS & Clinical Interoperability</h3>
+          <p>
+            Connect diagnostic hardware seamlessly to hospital imaging archives and clinical communication infrastructure.
+          </p>
+          <ul class="verified-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Standard DICOM storage and communication protocol support.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Secure digital repository for patient studies and diagnostic documentation.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Web-enabled access for remote specialist consultations.</span>
+            </li>
+          </ul>
+          <a href="./contact.html" class="arrow-link">
+            <span>Inquire About Integration</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="segment-media-frame">
+          <img src="./assets/bg4.jpg" alt="Clinical PACS Infrastructure" />
+          <div class="segment-media-caption">Clinical Image Archive</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. Editorial Medical Hardware Showcases (NOT Ecommerce Cards!)
+       ======================================================================== -->
+  <section class="section" id="hardware">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Medical Device Portfolio</div>
+        <h2 class="section-title">Diagnostic Equipment Engineered for Healthcare</h2>
+        <p class="section-subtitle">
+          Professional medical devices presenting high diagnostic fidelity in portable and clinical configurations.
+        </p>
+      </div>
+
+      <div class="hardware-editorial-wrapper">
+        <!-- Device 1: ScanAI ECG 12 -->
+        <div class="hardware-editorial-item">
+          <div class="hardware-image-canvas">
+            <img src="./assets/p1.jpeg" alt="ScanAI ECG 12 Portable System" />
+          </div>
+          <div class="hardware-info-col">
+            <span class="hardware-kicker">PORTABLE CARDIAC MONITORING</span>
+            <h3 class="hardware-title">ScanAI ECG 12</h3>
+            <div class="hardware-tagline">Real-time 12-lead heart monitoring at the point of care.</div>
+            <p class="hardware-desc">
+              A compact electrocardiograph engineered for mobility. Designed for rapid clinical assessment in emergency response, primary care clinics, and bedside monitoring.
+            </p>
+
+            <div class="hardware-specs-row">
+              <div class="hardware-spec-item">
+                <span class="spec-label">Modality</span>
+                <span class="spec-value">12-Lead ECG</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Operation</span>
+                <span class="spec-value">Continuous Real-Time</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Form Factor</span>
+                <span class="spec-value">Handheld Portable</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Integration</span>
+                <span class="spec-value">Mobile App Connected</span>
+              </div>
+            </div>
+
+            <div class="hardware-cta-row">
+              <button class="btn btn-secondary view-specs-btn" data-product-id="scanai-ecg-12">
+                Explore Specifications →
+              </button>
+              <a href="#contact" class="btn btn-primary inquiry-trigger-btn" data-product-name="ScanAI ECG 12" data-specialty="Cardiology">
+                Request Evaluation
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Device 2: ScanAI ECG Pro (Reversed) -->
+        <div class="hardware-editorial-item reversed">
+          <div class="hardware-image-canvas">
+            <img src="./assets/p3.jpeg" alt="ScanAI ECG Pro Hospital Workstation" />
+          </div>
+          <div class="hardware-info-col">
+            <span class="hardware-kicker">HOSPITAL DIAGNOSTIC WORKSTATION</span>
+            <h3 class="hardware-title">ScanAI ECG Pro</h3>
+            <div class="hardware-tagline">Advanced clinical diagnostic electrocardiograph.</div>
+            <p class="hardware-desc">
+              Built for high-volume hospital wards and cardiology departments. Features an integrated clinical display and smart connectivity for patient record archiving.
+            </p>
+
+            <div class="hardware-specs-row">
+              <div class="hardware-spec-item">
+                <span class="spec-label">Modality</span>
+                <span class="spec-value">Diagnostic ECG System</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Interface</span>
+                <span class="spec-value">Integrated Display</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Environment</span>
+                <span class="spec-value">Hospital Departments</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Connectivity</span>
+                <span class="spec-value">Network Integration Ready</span>
+              </div>
+            </div>
+
+            <div class="hardware-cta-row">
+              <button class="btn btn-secondary view-specs-btn" data-product-id="scanai-ecg-pro">
+                Explore Specifications →
+              </button>
+              <a href="#contact" class="btn btn-primary inquiry-trigger-btn" data-product-name="ScanAI ECG Pro" data-specialty="Cardiology">
+                Request Evaluation
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Device 3: ScanAI X-Ray Pro -->
+        <div class="hardware-editorial-item">
+          <div class="hardware-image-canvas">
+            <img src="./assets/xray_handheld.jpeg" alt="ScanAI X-Ray Pro Handheld System" />
+          </div>
+          <div class="hardware-info-col">
+            <span class="hardware-kicker">HANDHELD DIGITAL RADIOGRAPHY</span>
+            <h3 class="hardware-title">ScanAI X-Ray Pro</h3>
+            <div class="hardware-tagline">High-definition digital X-ray with operator shielding.</div>
+            <p class="hardware-desc">
+              Brings high-quality radiologic imaging directly to the patient bedside. Features an ergonomic handheld form factor and DICOM compatibility for hospital workflows.
+            </p>
+
+            <div class="hardware-specs-row">
+              <div class="hardware-spec-item">
+                <span class="spec-label">Modality</span>
+                <span class="spec-value">Digital Radiography</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Design</span>
+                <span class="spec-value">Ergonomic Handheld</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Standards</span>
+                <span class="spec-value">DICOM Compatible</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Application</span>
+                <span class="spec-value">Bedside & Emergency Care</span>
+              </div>
+            </div>
+
+            <div class="hardware-cta-row">
+              <button class="btn btn-secondary view-specs-btn" data-product-id="scanai-xray-pro">
+                Explore Specifications →
+              </button>
+              <a href="#contact" class="btn btn-primary inquiry-trigger-btn" data-product-name="ScanAI X-Ray Pro" data-specialty="Radiology">
+                Request Evaluation
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Device 4: ScanAI Mobile Portable X-Ray (Reversed) -->
+        <div class="hardware-editorial-item reversed">
+          <div class="hardware-image-canvas">
+            <img src="./assets/mobile_portable_xray.jpeg" alt="ScanAI Mobile Portable X-Ray Unit" />
+          </div>
+          <div class="hardware-info-col">
+            <span class="hardware-kicker">MOBILE WARD & ICU SUITE</span>
+            <h3 class="hardware-title">ScanAI Mobile Portable X-Ray</h3>
+            <div class="hardware-tagline">Wheeled digital radiography with articulated arm.</div>
+            <p class="hardware-desc">
+              Engineered for rapid transport between hospital departments and patient bedsides. Designed for swift diagnosis in non-ambulatory and intensive care situations.
+            </p>
+
+            <div class="hardware-specs-row">
+              <div class="hardware-spec-item">
+                <span class="spec-label">Modality</span>
+                <span class="spec-value">Mobile Digital X-Ray</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Mobility</span>
+                <span class="spec-value">Wheeled Cart System</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Positioning</span>
+                <span class="spec-value">Articulated Arm</span>
+              </div>
+              <div class="hardware-spec-item">
+                <span class="spec-label">Deployment</span>
+                <span class="spec-value">Hospital Wards & ICU</span>
+              </div>
+            </div>
+
+            <div class="hardware-cta-row">
+              <button class="btn btn-secondary view-specs-btn" data-product-id="scanai-mobile-xray">
+                Explore Specifications →
+              </button>
+              <a href="#contact" class="btn btn-primary inquiry-trigger-btn" data-product-name="ScanAI Mobile Portable X-Ray" data-specialty="Radiology">
+                Request Evaluation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Equipment Catalog Section (Grid View)
+       ======================================================================== -->
+  <section class="section section-subtle" id="catalogSection">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Equipment Index</div>
+        <h2 class="section-title">Verified Clinical Systems</h2>
+        <p class="section-subtitle">
+          Browse our complete portfolio of electrocardiographs and digital radiography solutions.
+        </p>
+      </div>
+
+      <div class="catalog-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Modalities (4)</button>
+        <button class="filter-btn" data-filter="ecg">ECG Systems (2)</button>
+        <button class="filter-btn" data-filter="xray">Digital Radiography (2)</button>
+      </div>
+
+      <div class="products-grid" id="productsGridContainer">
+        <!-- Dynamically rendered by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. Mobile Clinical Suite
+       ======================================================================== -->
+  <section class="section" id="mobile">
+    <div class="container">
+      <div class="mobile-suite-grid">
+        <div>
+          <div class="eyebrow-tag">Connected Healthcare</div>
+          <h2>Point-of-Care Diagnostics in Your Hand</h2>
+          <p class="text-lead" style="margin-bottom: 20px;">
+            Synchronize ScanAI portable ECG and X-ray systems directly with mobile clinical applications for real-time review and seamless record management.
+          </p>
+          <ul class="verified-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Instant wireless pairing with ScanAI diagnostic hardware.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Live waveform tracking and radiograph viewing on clinical tablets.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Structured patient reporting and digital record export.</span>
+            </li>
+          </ul>
+
+          <div class="app-badges-row">
+            <div class="app-badge-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.67-1.09 1.74-.95 2.77.99.08 2.03-.52 2.68-1.27z"/></svg>
+              <div>
+                <div class="badge-sub">Available on</div>
+                <div class="badge-main">iOS & iPadOS</div>
+              </div>
+            </div>
+
+            <div class="app-badge-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.14L13.69 12L3.84 21.86C3.34 21.61 3 21.09 3 20.5ZM16.5 9.19L18.7 10.45C19.78 11.07 19.78 12.93 18.7 13.55L16.5 14.81L14.4 12.71L16.5 9.19ZM4.54 1.35L14.9 11.71L13.1 13.51L3.5 3.91C3.76 2.67 4.18 1.71 4.54 1.35ZM4.54 22.65C4.18 22.29 3.76 21.33 3.5 20.09L13.1 10.49L14.9 12.29L4.54 22.65Z"/></svg>
+              <div>
+                <div class="badge-sub">Available on</div>
+                <div class="badge-main">Google Play Store</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-app-preview-frame">
+          <img src="./assets/download.jpg" alt="ScanAI Clinical Application Interface" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. Clinical Consultation & Demo Scheduling
+       ======================================================================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="eyebrow-tag">Institutional Scheduling</div>
+        <h2 class="section-title">Request a Clinical Demonstration</h2>
+        <p class="section-subtitle">
+          Connect directly with a ScanAI clinical solutions specialist to review equipment evaluation options and diagnostic workflows.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-box">
+          <div class="contact-meta-card">
+            <h4>Direct Clinical Inquiries</h4>
+            <p style="margin-bottom: 12px;">We coordinate equipment reviews, trials, and technical workflow discussions for hospitals, emergency facilities, and medical clinics.</p>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+              <a href="mailto:hello@scanai.health" style="font-size: 0.95rem; font-weight: 600; color: var(--color-brand); display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@scanai.health
+              </a>
+              <a href="tel:8792126143" style="font-size: 0.95rem; font-weight: 600; color: var(--color-primary); display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                8792126143
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-meta-card">
+            <h4>Institutional Response</h4>
+            <p>Direct inquiries from clinical departments receive an evaluation response from our biomedical application team within 24 business hours.</p>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="clinicalDemoForm" novalidate>
+            <input type="hidden" name="access_key" value="c45f9a0c-53cf-44dc-8397-5c2b0424114e" />
+            <input type="hidden" name="subject" value="New Clinical Demo Request - ScanAI" />
+            <input type="hidden" name="from_name" value="ScanAI Web Portal" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formFullName" class="form-label">
+                  Clinician / Contact Name <span class="required">*</span>
+                </label>
+                <input type="text" id="formFullName" name="name" class="form-control" placeholder="Dr. Sarah Jenkins" required />
+                <div class="form-error-msg" id="errorFullName">Please provide your full clinical or professional name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="formWorkEmail" class="form-label">
+                  Professional Email <span class="required">*</span>
+                </label>
+                <input type="email" id="formWorkEmail" name="email" class="form-control" placeholder="s.jenkins@healthsystem.org" required />
+                <div class="form-error-msg" id="errorWorkEmail">Please provide a valid professional email address.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formInstitution" class="form-label">
+                  Hospital / Institution <span class="required">*</span>
+                </label>
+                <input type="text" id="formInstitution" name="institution" class="form-control" placeholder="Memorial Health Hospital" required />
+                <div class="form-error-msg" id="errorInstitution">Please provide your hospital or practice name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="formSpecialty" class="form-label">Department / Modality</label>
+                <select id="formSpecialty" name="specialty" class="form-control">
+                  <option value="Cardiology / 12-Lead ECG">Cardiology / 12-Lead ECG</option>
+                  <option value="Radiology & Imaging">Radiology & Imaging</option>
+                  <option value="Emergency & Inpatient Care">Emergency & Inpatient Care</option>
+                  <option value="Primary Care Practice">Primary Care Practice</option>
+                  <option value="Biomedical Engineering">Biomedical Engineering</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">
+                Evaluation Goals & Inquiries <span class="required">*</span>
+              </label>
+              <textarea id="formMessage" name="message" rows="4" class="form-control" placeholder="Please describe your clinical evaluation interests, facility department, or hardware inquiry..." required></textarea>
+              <div class="form-error-msg" id="errorMessage">Please provide inquiry details (minimum 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Submit Demonstration Request</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. Product Specification Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="productSpecModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="product-category" id="modalProductCategory">Medical Equipment</span>
+          <h2 id="modalProductTitle" style="font-size: 1.35rem; color: var(--color-primary);">Product Details</h2>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close Specification Modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-product-layout">
+          <div class="modal-image-box">
+            <img id="modalProductImage" src="./assets/p1.jpeg" alt="Medical Device" />
+          </div>
+          <div>
+            <h4 style="margin-bottom: 8px;">Product Overview</h4>
+            <p id="modalProductDesc" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+              Clinical device description.
+            </p>
+            <a href="./contact.html" id="modalInquireBtn" class="btn btn-primary btn-sm">Request Evaluation Details</a>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom: 12px; color: var(--color-primary);">Technical & Clinical Highlights</h4>
+        <table class="modal-spec-table">
+          <tbody id="modalSpecTableBody">
+            <!-- Populated dynamically by js/main.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <span style="font-size: 0.78rem; color: var(--text-muted);">
+          Detailed technical datasheets and institutional documentation available upon request.
+        </span>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('productSpecModal').classList.remove('active'); document.body.style.overflow='';">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       12. Enterprise Healthcare Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-summary">
+          <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+          <p>
+            ScanAI develops connected electrocardiographs, digital radiography systems, and clinical workflow software for medical professionals.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinical Modalities</h4>
+          <ul>
+            <li><a href="#solutions">12-Lead ECG Telemetry</a></li>
+            <li><a href="#solutions">Digital Radiography</a></li>
+            <li><a href="#solutions">PACS Synchronization</a></li>
+            <li><a href="#mobile">Mobile Clinical Suite</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Medical Hardware</h4>
+          <ul>
+            <li><a href="#hardware">ScanAI ECG 12</a></li>
+            <li><a href="#hardware">ScanAI ECG Pro</a></li>
+            <li><a href="#hardware">ScanAI X-Ray Pro</a></li>
+            <li><a href="#hardware">Mobile Portable X-Ray</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institutional Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@scanai.health">hello@scanai.health</a></li>
+            <li><a href="tel:8792126143">+91 8792126143</a></li>
+            <li><a href="./about.html">About ScanAI</a></li>
+            <li><a href="./products.html">Equipment Catalog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Medical Notice:</strong> ScanAI medical devices and clinical software applications are designed for use by qualified healthcare practitioners as diagnostic support tools. Products are deployed subject to institutional sales agreements and regional requirements.
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 ScanAI Healthcare Technologies. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="./about.html">Institutional Information</a>
+          <a href="./contact.html">Contact Specialist</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/products-data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Equipment Catalog — ScanAI</title>
+  <meta name="description" content="Browse ScanAI's portfolio of portable 12-lead electrocardiographs, handheld digital X-rays, and mobile hospital radiography systems." />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="ScanAI Home">
+        <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="./index.html#hardware" class="nav-link">Medical Hardware</a></li>
+          <li><a href="./index.html#architecture" class="nav-link">Platform Architecture</a></li>
+          <li><a href="./index.html#mobile" class="nav-link">Mobile Suite</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="./contact.html" class="nav-text-link">Contact</a>
+        <a href="./products.html" class="nav-text-link active" style="color: var(--color-brand); font-weight: 600;">Catalog</a>
+        <a href="./contact.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="./index.html" class="brand-logo">
+        <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 32px;" />
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html#solutions">Clinical Solutions</a></li>
+      <li><a href="./index.html#hardware">Medical Hardware</a></li>
+      <li><a href="./index.html#architecture">Platform Architecture</a></li>
+      <li><a href="./index.html#mobile">Mobile Suite</a></li>
+      <li><a href="./products.html">Equipment Catalog</a></li>
+      <li><a href="./about.html">About ScanAI</a></li>
+      <li><a href="./contact.html">Contact & Support</a></li>
+    </ul>
+
+    <div style="margin-top: auto;">
+      <a href="./contact.html" class="btn btn-primary" style="width: 100%;">Schedule Clinical Demo</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop"></div>
+
+  <!-- Page Header -->
+  <section style="padding: 130px 0 56px 0; background: #ffffff; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container text-center">
+      <div class="eyebrow-tag">Hardware Index</div>
+      <h1 style="margin-bottom: 16px;">Medical Device Catalog</h1>
+      <p class="text-lead" style="max-width: 640px; margin: 0 auto;">
+        Explore ScanAI’s portfolio of portable electrocardiographs and digital radiography solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Catalog Grid Section -->
+  <section class="section" style="padding-top: 64px;">
+    <div class="container">
+      <div class="catalog-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Modalities (4)</button>
+        <button class="filter-btn" data-filter="ecg">12-Lead ECG (2)</button>
+        <button class="filter-btn" data-filter="xray">Digital Radiography (2)</button>
+      </div>
+
+      <div class="products-grid" id="productsGridContainer">
+        <!-- Dynamically rendered by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Modal -->
+  <div class="modal-backdrop" id="productSpecModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="product-category" id="modalProductCategory">Medical Equipment</span>
+          <h2 id="modalProductTitle" style="font-size: 1.35rem; color: var(--color-primary);">Product Details</h2>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-product-layout">
+          <div class="modal-image-box">
+            <img id="modalProductImage" src="./assets/p1.jpeg" alt="Medical Device" />
+          </div>
+          <div>
+            <h4 style="margin-bottom: 8px;">Product Overview</h4>
+            <p id="modalProductDesc" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+              Clinical device description.
+            </p>
+            <a href="./contact.html" id="modalInquireBtn" class="btn btn-primary btn-sm">Request Evaluation Details</a>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom: 12px; color: var(--color-primary);">Technical & Clinical Highlights</h4>
+        <table class="modal-spec-table">
+          <tbody id="modalSpecTableBody">
+            <!-- Populated dynamically by js/main.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <span style="font-size: 0.78rem; color: var(--text-muted);">
+          Detailed technical documentation available upon request.
+        </span>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('productSpecModal').classList.remove('active'); document.body.style.overflow='';">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-summary">
+          <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
+          <p>ScanAI develops connected electrocardiographs, digital radiography systems, and clinical workflow software for medical professionals.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Clinical Hardware</h4>
+          <ul>
+            <li><a href="./products.html">ScanAI ECG 12</a></li>
+            <li><a href="./products.html">ScanAI ECG Pro</a></li>
+            <li><a href="./products.html">ScanAI X-Ray Pro</a></li>
+            <li><a href="./products.html">Mobile Portable X-Ray</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="./index.html">Platform Overview</a></li>
+            <li><a href="./about.html">About ScanAI</a></li>
+            <li><a href="./contact.html">Request Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Inquiries</h4>
+          <ul>
+            <li><a href="mailto:hello@scanai.health">hello@scanai.health</a></li>
+            <li><a href="tel:8792126143">+91 8792126143</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 ScanAI Healthcare Technologies. All rights reserved.</div>
+        <div><a href="./contact.html">Clinical Support</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/products-data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
