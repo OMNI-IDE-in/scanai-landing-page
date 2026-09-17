@@ -726,40 +726,10 @@
 }
 
 /* ==========================================================================
-   10. Pre-Clinical Regulatory Banner
+   10. Pre-Clinical Regulatory Banner (Removed per design)
    ========================================================================== */
 .regulatory-banner {
-  background: #0f172a;
-  color: #cbd5e1;
-  font-size: 0.78rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 8px 0;
-}
-
-.regulatory-banner-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.reg-tag {
-  display: inline-block;
-  background: rgba(245, 158, 11, 0.15);
-  color: #fbbf24;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  font-size: 0.68rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 4px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.reg-text {
-  color: #94a3b8;
+  display: none !important;
 }
 
 /* ==========================================================================
