@@ -347,3 +347,86 @@ html, body {
     font-size: 1.85rem;
   }
 }
+
+/* ==========================================================================
+   Flagship Layout Responsiveness (Omni Rovis & Arogya Omni)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-metrics-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .cascade-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .case-study-card,
+  .case-study-card.reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px;
+  }
+
+  .case-study-card.reverse .case-study-content {
+    order: 1;
+  }
+
+  .hw-grid.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .mech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .arogya-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .arogya-enterprise-showcase {
+    padding: 32px 24px;
+  }
+
+  .rad-caption-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-metrics-strip {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cascade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .citation-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .case-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .math-box {
+    padding: 20px;
+  }
+
+  .math-equation {
+    font-size: 0.92rem;
+    padding: 10px;
+  }
+}
+

@@ -679,3 +679,856 @@
   height: 18px;
   flex-shrink: 0;
 }
+
+/* ==========================================================================
+   10. Pre-Clinical Regulatory Banner
+   ========================================================================== */
+.regulatory-banner {
+  background: #0f172a;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 0;
+}
+
+.regulatory-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.reg-tag {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.reg-text {
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   11. Omni Rovis Cockpit & Metrics Strip
+   ========================================================================== */
+.hero-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 20px 28px;
+  margin: 36px 0 44px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.metric-pill {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-val {
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.metric-lbl {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.text-emerald { color: #059669 !important; }
+.text-blue { color: #2563eb !important; }
+.text-purple { color: #7c3aed !important; }
+.text-amber { color: #d97706 !important; }
+.text-red { color: #dc2626 !important; }
+.text-sky { color: #0284c7 !important; }
+.text-teal { color: #0d9488 !important; }
+.text-rose { color: #e11d48 !important; }
+
+.cockpit-showcase-frame {
+  background: #0f172a;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35);
+  margin-top: 24px;
+}
+
+.showcase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #1e293b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.window-controls .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.window-controls .dot.red { background: #ef4444; }
+.window-controls .dot.yellow { background: #f59e0b; }
+.window-controls .dot.green { background: #10b981; }
+
+.showcase-title {
+  font-size: 0.78rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.status-chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.status-chip.live {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.showcase-image-wrapper {
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.showcase-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   12. Feature Cards & Clinical Crisis
+   ========================================================================== */
+.cards-grid {
+  display: grid;
+  gap: 24px;
+}
+.cards-grid.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards-grid.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-tech-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand);
+}
+
+.card-code {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.card-stat {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Motion Citation Card */
+.motion-citation-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-top: 32px;
+}
+
+.citation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.citation-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.citation-meta {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.citation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.citation-stat .c-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: block;
+}
+
+.citation-stat .c-lbl {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.citation-links-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.c-link-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+.c-source-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-brand);
+}
+.c-source-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   13. Unified Vision Cascade & Math Box
+   ========================================================================== */
+.tech-cascade-container {
+  margin: 36px 0;
+}
+
+.subsection-title {
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.subsection-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.cascade-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.cascade-layer-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.cascade-layer-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-brand);
+}
+
+.layer-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.layer-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.layer-model {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  margin-bottom: 8px;
+}
+
+.layer-desc {
+  font-size: 0.76rem;
+  color: var(--text-body);
+  line-height: 1.45;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.layer-confidence {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.math-box {
+  background: #0f172a;
+  color: #f1f5f9;
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  margin: 32px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.math-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.math-equation {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: #38bdf8;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 6px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.math-explanation {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   14. Case Studies & Retrospective Benchmarks
+   ========================================================================== */
+.case-study-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  padding: 36px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-sm);
+  align-items: center;
+}
+
+.case-study-card.reverse {
+  grid-template-columns: 0.85fr 1.15fr;
+}
+.case-study-card.reverse .case-study-content {
+  order: 2;
+}
+.case-study-card.reverse .case-study-visual {
+  order: 1;
+}
+
+.report-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.report-id {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.06em;
+}
+
+.report-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.case-title {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.case-desc {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.case-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  background: var(--bg-alt);
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+}
+
+.stat-item .stat-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: block;
+}
+
+.stat-item .stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.case-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.case-study-visual {
+  display: flex;
+  flex-direction: column;
+  background: #090d16;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+}
+
+.case-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.img-caption {
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  background: #0f172a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================================
+   15. Dosimetry & Radiation Comparison
+   ========================================================================== */
+.radiation-visual-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32px;
+}
+
+.rad-visual-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.rad-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #38bdf8;
+}
+
+.rad-stat-tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.rad-image-container {
+  width: 100%;
+  background: #020617;
+}
+
+.rad-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rad-caption-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 24px 28px;
+  background: #ffffff;
+}
+
+.rad-caption-col h4 {
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+
+.rad-caption-col p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.comparison-table th {
+  background: var(--bg-alt);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.comparison-table th.highlight-col, .comparison-table td.highlight-col {
+  background: rgba(16, 185, 129, 0.04);
+}
+
+/* ==========================================================================
+   16. TruBlock Hardware Exploded View & Mechanisms
+   ========================================================================== */
+.hw-grid {
+  display: grid;
+  gap: 28px;
+}
+.hw-grid.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.hw-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.hw-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hw-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+}
+
+.hw-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hw-img-box {
+  background: #020617;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hw-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hw-desc-box {
+  padding: 20px;
+}
+
+.hw-desc-box h4 {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.hw-desc-box p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.hw-mechanism-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.mech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.mech-img-box {
+  background: #020617;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  height: 240px;
+}
+
+.mech-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mech-title {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin: 6px 0 10px 0;
+}
+
+.mech-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.mech-stats-row {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 14px;
+}
+
+.mech-stat .m-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  display: block;
+}
+
+.mech-stat .m-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   17. Arogya Omni Enterprise Showcase
+   ========================================================================== */
+.arogya-enterprise-showcase {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-alt) 100%);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  box-shadow: var(--shadow-md);
+  margin-top: 32px;
+}
+
+.arogya-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.arogya-badges-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.arogya-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.arogya-pill.abdm { background: rgba(37, 99, 235, 0.1); color: #2563eb; border: 1px solid rgba(37, 99, 235, 0.2); }
+.arogya-pill.nhcx { background: rgba(16, 185, 129, 0.1); color: #059669; border: 1px solid rgba(16, 185, 129, 0.2); }
+.arogya-pill.fhir { background: rgba(124, 58, 237, 0.1); color: #7c3aed; border: 1px solid rgba(124, 58, 237, 0.2); }
+
+.arogya-title {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.arogya-desc {
+  font-size: 0.98rem;
+  color: var(--text-body);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.arogya-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.arogya-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+.arogya-feature-list li svg {
+  width: 18px;
+  height: 18px;
+  color: #2563eb;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.arogya-preview-frame {
+  background: #0f172a;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.arogya-preview-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

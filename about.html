@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About ScanAI — Clinical Mission & Diagnostic Technology</title>
-  <meta name="description" content="Learn about ScanAI's mission to bring clinical-grade point-of-care diagnostics and connected imaging to healthcare providers." />
+  <title>About ScanAI — Surgical Robotics & Healthcare Operating Systems</title>
+  <meta name="description" content="ScanAI engineers deep-tech healthcare systems: Omni Rovis (autonomous fluoroscopy motion compensation and surgical navigation) and Arogya Omni (ABDM & NHCX hospital OS)." />
   <link rel="icon" type="image/png" href="./assets/logo.png" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./css/variables.css" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 <body>
+
+  <!-- Regulatory Compliance Banner -->
+  <div class="regulatory-banner">
+    <div class="container regulatory-banner-content">
+      <span class="reg-badge">SCANAI CORPORATE &bull; CLINICAL MISSION</span>
+      <span class="reg-text">Omni Rovis Pre-Clinical / Investigational Validation &bull; Arogya Omni ABDM M1&ndash;M4 Certified & NHCX Production Ready</span>
+    </div>
+  </div>
 
   <!-- Site Header -->
   <header class="site-header" id="siteHeader">
@@ -27,20 +35,22 @@
 
       <nav aria-label="Main Navigation">
         <ul class="nav-menu">
-          <li><a href="./index.html#solutions" class="nav-link">Solutions</a></li>
-          <li><a href="./index.html#hardware" class="nav-link">Medical Hardware</a></li>
-          <li><a href="./index.html#architecture" class="nav-link">Platform Architecture</a></li>
-          <li><a href="./index.html#mobile" class="nav-link">Mobile Suite</a></li>
-          <li><a href="./about.html" class="nav-link active" style="color: var(--color-brand); font-weight: 600;">About</a></li>
+          <li><a href="./index.html#rovis-overview" class="nav-link">Omni Rovis (Flagship)</a></li>
+          <li><a href="./index.html#clinical-need" class="nav-link">Clinical Need</a></li>
+          <li><a href="./index.html#architecture" class="nav-link">Perception & Control</a></li>
+          <li><a href="./index.html#pilot-studies" class="nav-link">Pilot Studies</a></li>
+          <li><a href="./index.html#trublock" class="nav-link">TruBlock Hardware</a></li>
+          <li><a href="./index.html#arogya-omni" class="nav-link">Arogya Hospital OS</a></li>
+          <li><a href="./products.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link active">About</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <a href="./contact.html" class="nav-text-link">Contact</a>
-        <a href="./products.html" class="nav-text-link">Catalog</a>
-        <a href="./contact.html" class="btn btn-primary btn-sm">
-          <span>Book a Demo</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <a href="./contact.html" class="btn-nav-cta">
+          <span>Request Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
@@ -51,97 +61,102 @@
   </header>
 
   <!-- Mobile Drawer -->
-  <div class="mobile-drawer">
-    <div class="mobile-drawer-header">
-      <a href="./index.html" class="brand-logo">
-        <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 32px;" />
-      </a>
-      <button class="drawer-close" aria-label="Close Navigation Menu">
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 28px;" />
+      <button class="drawer-close" aria-label="Close Menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-
     <ul class="mobile-nav-links">
-      <li><a href="./index.html#solutions">Clinical Solutions</a></li>
-      <li><a href="./index.html#hardware">Medical Hardware</a></li>
-      <li><a href="./index.html#architecture">Platform Architecture</a></li>
-      <li><a href="./index.html#mobile">Mobile Suite</a></li>
+      <li><a href="./index.html#rovis-overview">Omni Rovis (Flagship)</a></li>
+      <li><a href="./index.html#clinical-need">Clinical Need</a></li>
+      <li><a href="./index.html#architecture">Perception & Control</a></li>
+      <li><a href="./index.html#pilot-studies">Pilot Studies</a></li>
+      <li><a href="./index.html#trublock">TruBlock Hardware</a></li>
+      <li><a href="./index.html#arogya-omni">Arogya Hospital OS</a></li>
       <li><a href="./products.html">Equipment Catalog</a></li>
       <li><a href="./about.html">About ScanAI</a></li>
-      <li><a href="./contact.html">Contact & Support</a></li>
+      <li><a href="./contact.html">Contact Specialist</a></li>
     </ul>
-
-    <div style="margin-top: auto;">
-      <a href="./contact.html" class="btn btn-primary" style="width: 100%;">Schedule Clinical Demo</a>
+    <div class="drawer-cta-wrap">
+      <a href="./contact.html" class="btn btn-primary btn-md" style="width: 100%;">Request Clinical Demo</a>
     </div>
-  </div>
-  <div class="drawer-backdrop"></div>
+  </aside>
 
   <!-- Page Header -->
-  <section style="padding: 130px 0 56px 0; background: #ffffff; border-bottom: 1px solid var(--border-subtle);">
+  <section style="padding: 140px 0 56px 0; background: #ffffff; border-bottom: 1px solid var(--border-subtle);">
     <div class="container text-center">
-      <div class="eyebrow-tag">Clinical Mission</div>
-      <h1 style="margin-bottom: 16px;">Advancing Point-of-Care Diagnostics</h1>
-      <p class="text-lead" style="max-width: 680px; margin: 0 auto;">
-        ScanAI is committed to making medical diagnostics faster, more accessible, and seamlessly connected for clinicians worldwide.
+      <div class="eyebrow-tag">TECHNOLOGY &bull; MISSION</div>
+      <h1 style="margin-bottom: 16px; font-size: clamp(2rem, 3.5vw, 2.75rem); color: var(--color-primary);">
+        Autonomous Surgical AI &amp; Hospital Infrastructure
+      </h1>
+      <p class="text-lead" style="max-width: 760px; margin: 0 auto; color: var(--text-muted);">
+        ScanAI is an applied artificial intelligence and medical robotics engineering firm dedicated to eliminating procedural friction, radiation overexposure, and administrative delays in clinical care.
       </p>
     </div>
   </section>
 
   <!-- Mission Split Section -->
-  <section class="section">
+  <section class="section" style="padding: 64px 0;">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center;">
         <div>
-          <div class="eyebrow-tag">Our Vision</div>
-          <h2 style="margin-bottom: 20px;">Designed to Assist, Not Replace</h2>
-          <p class="text-lead" style="margin-bottom: 18px;">
-            Modern healthcare demands immediate diagnostic insight where care actually happens—at the patient bedside, emergency room, or outpatient clinic.
+          <div class="eyebrow-tag">Core Conviction</div>
+          <h2 style="margin-bottom: 20px; font-size: clamp(1.8rem, 2.5vw, 2.2rem); color: var(--color-primary);">
+            Deterministic Autonomy Where Millimeters &amp; Seconds Matter
+          </h2>
+          <p class="text-lead" style="margin-bottom: 18px; color: var(--text-body);">
+            Interventional surgery and hospital operations both suffer from unneeded friction: surgeons are blinded by contrast washouts and radiation burdens, while hospital teams drown in paper claims and disconnected software.
           </p>
-          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
-            ScanAI engineers portable diagnostic hardware and connected clinical software that give physicians reliable tools for cardiac rhythm monitoring and digital radiography. We believe technology should reduce administrative friction and support clinicians in making timely clinical decisions.
+          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; font-size: 0.95rem;">
+            ScanAI focuses on two transformative platforms. With <strong>Omni Rovis</strong>, we engineer real-time closed-loop computer vision and adaptive visual servoing to stabilize C-arm fluoroscopy and eliminate up to 78% of scatter radiation. With <strong>Arogya Omni</strong>, we build India's premier hospital operating system certified across all ABDM milestones and powered by an automated National Health Claims Exchange engine.
           </p>
-          <div style="display: flex; gap: 12px;">
-            <a href="./contact.html" class="btn btn-primary">Schedule a Demo</a>
-            <a href="./products.html" class="btn btn-secondary">Explore Hardware</a>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://rovis.omniide.com/" target="_blank" rel="noopener" class="btn btn-primary">Visit Omni Rovis &rarr;</a>
+            <a href="https://arogya.omniide.com/" target="_blank" rel="noopener" class="btn btn-secondary">Visit Arogya Omni &rarr;</a>
           </div>
         </div>
 
-        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: var(--shadow-sm); height: 340px;">
-          <img src="./assets/service2.jpg" alt="Clinician reviewing diagnostic telemetry" style="width: 100%; height: 100%; object-fit: cover;" />
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-medium); box-shadow: var(--shadow-md);">
+          <img src="./assets/omni_rovis_cockpit.png" alt="Omni Rovis Surgical Workstation Cockpit" style="width: 100%; height: auto; display: block;" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Core Principles Section -->
-  <section class="section section-subtle">
+  <!-- Engineering Principles -->
+  <section class="section section-subtle" style="padding: 72px 0; background: var(--bg-alt); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
     <div class="container">
       <div class="section-header text-center">
-        <div class="eyebrow-tag">Engineering Focus</div>
-        <h2 class="section-title">Core Principles of Our Technology</h2>
-        <p class="section-subtitle">The foundational standards guiding our medical devices and software development.</p>
+        <div class="eyebrow-tag">ENGINEERING STANDARDS</div>
+        <h2 class="section-title">Foundational Pillars of Our Systems</h2>
+        <p class="section-desc">Every line of code and mechanical module is built according to rigorous medical standards.</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
-          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Point-of-Care Portability</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 32px;">
+          <span style="font-size: 0.72rem; font-weight: 700; color: #2563eb; letter-spacing: 0.06em; text-transform: uppercase;">01 &bull; DETERMINISM</span>
+          <h4 style="color: var(--color-primary); margin: 8px 0 12px 0; font-size: 1.15rem;">Deterministic Real-Time Latency</h4>
           <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-            Engineering hardware that is lightweight and robust enough to deploy rapidly anywhere patients require diagnostic evaluation.
+            Sub-14 ms end-to-end perception loops executed in TensorRT FP16 on NVIDIA IGX Orin surgical hardware, backed by hardware watchdog interlocks halting motion within 6 ms.
           </p>
         </div>
 
-        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
-          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Clinical Integration</h4>
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 32px;">
+          <span style="font-size: 0.72rem; font-weight: 700; color: #10b981; letter-spacing: 0.06em; text-transform: uppercase;">02 &bull; DOSIMETRY</span>
+          <h4 style="color: var(--color-primary); margin: 8px 0 12px 0; font-size: 1.15rem;">Active Radiation Suppression</h4>
           <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-            Building upon standard healthcare protocols like DICOM to ensure images and telemetry flow smoothly into existing hospital archives.
+            Shrinking fluoroscopic exposure portals from full 30x30 cm detector fields to dynamic 8x8 cm portals via patented TruBlock collimation, cutting operator scatter by up to 78%.
           </p>
         </div>
 
-        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 28px;">
-          <h4 style="color: var(--color-primary); margin-bottom: 10px;">Physician-Centered Design</h4>
+        <div style="background: #ffffff; border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 32px;">
+          <span style="font-size: 0.72rem; font-weight: 700; color: #8b5cf6; letter-spacing: 0.06em; text-transform: uppercase;">03 &bull; INTEROPERABILITY</span>
+          <h4 style="color: var(--color-primary); margin: 8px 0 12px 0; font-size: 1.15rem;">National Infrastructure Standards</h4>
           <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-            Providing clear diagnostic support and intuitive interfaces so clinical teams spend less time configuring systems and more time with patients.
+            Native ABDM Milestones 1–4 certification, instant National Health Claims Exchange (NHCX) pre-authorization, and HL7 FHIR R4 interoperability for zero hospital lock-in.
           </p>
         </div>
       </div>
@@ -154,35 +169,42 @@
       <div class="footer-grid">
         <div class="footer-brand-summary">
           <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
-          <p>ScanAI develops connected electrocardiographs, digital radiography systems, and clinical workflow software for medical professionals.</p>
+          <p>ScanAI develops autonomous surgical motion compensation platforms and certified national digital health operating systems for modern healthcare networks.</p>
         </div>
         <div class="footer-col">
-          <h4>Clinical Systems</h4>
+          <h4>Surgical AI (Flagship)</h4>
           <ul>
-            <li><a href="./products.html">12-Lead ECG & Radiography</a></li>
-            <li><a href="https://rovis.omniide.com/" target="_blank" rel="noopener">Omni Rovis (Surgical AI)</a></li>
-            <li><a href="https://arogya.omniide.com/" target="_blank" rel="noopener">Arogya Omni (Hospital OS)</a></li>
+            <li><a href="https://rovis.omniide.com/" target="_blank" rel="noopener">Omni Rovis Platform &rarr;</a></li>
+            <li><a href="./index.html#architecture">5-Task Vision Cascade</a></li>
+            <li><a href="./index.html#pilot-studies">Retrospective Benchmarks</a></li>
+            <li><a href="./index.html#trublock">TruBlock Collimator</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Hospital Operating System</h4>
           <ul>
-            <li><a href="./index.html">Platform Overview</a></li>
-            <li><a href="./products.html">Equipment Catalog</a></li>
-            <li><a href="./contact.html">Request Demo</a></li>
+            <li><a href="https://arogya.omniide.com/" target="_blank" rel="noopener">Arogya Omni Platform &rarr;</a></li>
+            <li><a href="./index.html#arogya-omni">ABDM M1&ndash;M4 Architecture</a></li>
+            <li><a href="./index.html#arogya-omni">Real-Time NHCX Engine</a></li>
+            <li><a href="./index.html#arogya-omni">Command Center Telemetry</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Inquiries</h4>
+          <h4>Institutional Contact</h4>
           <ul>
             <li><a href="mailto:hello@scanai.health">hello@scanai.health</a></li>
             <li><a href="tel:8792126143">+91 8792126143</a></li>
+            <li><a href="./about.html">About ScanAI</a></li>
+            <li><a href="./contact.html">Request Consultation</a></li>
           </ul>
         </div>
       </div>
+      <div class="footer-disclaimer-box">
+        <strong>Regulatory &amp; Medical Notice:</strong> Omni Rovis is an investigational medical technology currently validated through bench phantoms and retrospective surgical pilot datasets. It is not yet cleared by the US FDA or CE mark authorities for active human clinical guidance. Arogya Omni is certified under the Ayushman Bharat Digital Mission (ABDM Milestone 1&ndash;4) and configured for National Health Claims Exchange (NHCX) production environments.
+      </div>
       <div class="footer-bottom-bar">
         <div>&copy; 2026 ScanAI Healthcare Technologies. All rights reserved.</div>
-        <div><a href="./contact.html">Clinical Support</a></div>
+        <div><a href="./contact.html">Contact Specialist</a></div>
       </div>
     </div>
   </footer>
