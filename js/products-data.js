@@ -10,10 +10,10 @@ window.ScanAIProducts = [
     name: "Omni Rovis",
     tagline: "Autonomous Fluoroscopy Navigation & Surgical Motion Compensation",
     category: "surgical-ai",
-    categoryLabel: "Flagship Surgical AI",
+    categoryLabel: "Surgical AI & Navigation",
     image: "./assets/omni_rovis_cockpit.png",
     altImage: "./assets/trublock_carm_mounted.jpg",
-    badge: "Flagship Research Platform",
+    badge: "Autonomous Surgical Navigation",
     externalUrl: "https://rovis.omniide.com/",
     description: "An autonomous motion-compensation surgical co-pilot for interventional fluoroscopy and complex ERCP. Delivers continuous sub-millimeter anatomical target lock and automates ALARA radiation shielding with zero OEM tampering.",
     verifiedFeatures: [
