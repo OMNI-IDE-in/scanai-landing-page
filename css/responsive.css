@@ -145,6 +145,22 @@ html, body {
 }
 
 /* ==========================================================================
+   Desktop-to-Tablet Header Breakpoint (max-width: 1200px)
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .nav-menu,
+  .nav-actions {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: block !important;
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ==========================================================================
    Small Tablet & Mobile (max-width: 768px)
    ========================================================================== */
 @media (max-width: 768px) {
@@ -163,11 +179,11 @@ html, body {
 
   .nav-menu,
   .nav-actions {
-    display: none;
+    display: none !important;
   }
 
   .mobile-toggle {
-    display: block;
+    display: block !important;
     min-height: 44px;
     min-width: 44px;
   }
@@ -354,19 +370,20 @@ html, body {
 @media (max-width: 1024px) {
   .hero-metrics-strip {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 16px;
+    padding: 18px 20px;
   }
 
   .cascade-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .case-study-card,
   .case-study-card.reverse {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 28px;
+    padding: 28px 22px;
   }
 
   .case-study-card.reverse .case-study-content {
@@ -375,10 +392,12 @@ html, body {
 
   .hw-grid.two-col {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .mech-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .arogya-grid {
@@ -394,39 +413,298 @@ html, body {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
+  .contact-grid,
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 768px) {
+  /* Regulatory Banner Mobile */
+  .regulatory-banner {
+    padding: 8px 12px;
+  }
+
+  .regulatory-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .reg-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    align-self: center;
+  }
+
+  .reg-text {
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    padding-top: calc(var(--header-height) + 14px) !important;
+    padding-bottom: 36px !important;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 13px 18px !important;
+    font-size: 0.92rem !important;
+  }
+
+  /* Metrics Strip Mobile */
   .hero-metrics-strip {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+    padding: 16px 12px !important;
+    margin: 24px 0 32px 0 !important;
   }
 
-  .cascade-grid {
-    grid-template-columns: 1fr;
+  .hero-metric-item .m-val {
+    font-size: 1.35rem !important;
   }
 
+  .hero-metric-item .m-label {
+    font-size: 0.68rem !important;
+  }
+
+  .hero-metric-item .m-sub {
+    font-size: 0.65rem !important;
+  }
+
+  /* Cockpit Frame Mobile */
+  .cockpit-showcase-frame {
+    margin-top: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .cockpit-overlay-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    font-size: 0.68rem !important;
+    padding: 10px 14px !important;
+  }
+
+  /* Clinical Need Mobile */
   .cards-grid.three-col {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .feature-card {
+    padding: 22px 18px !important;
   }
 
   .citation-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    padding: 12px 0 !important;
   }
 
-  .case-stats-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
+  .citation-links-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  /* Architecture & Math Box Mobile */
+  .cascade-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
   }
 
   .math-box {
-    padding: 20px;
+    padding: 20px 16px !important;
+    margin: 24px 0 !important;
   }
 
   .math-equation {
-    font-size: 0.92rem;
-    padding: 10px;
+    font-size: 0.88rem !important;
+    padding: 10px 12px !important;
+  }
+
+  .math-explanation {
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Case Studies Mobile */
+  .case-study-card {
+    padding: 20px 16px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .case-title {
+    font-size: 1.2rem !important;
+  }
+
+  .case-stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    padding: 10px 14px !important;
+  }
+
+  .case-img {
+    height: 190px !important;
+  }
+
+  /* Hardware & Mechanism Mobile */
+  .hw-img-box {
+    height: 190px !important;
+  }
+
+  .mech-img-box {
+    height: 180px !important;
+  }
+
+  .mech-stats-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  /* Arogya Showcase Mobile */
+  .arogya-enterprise-showcase {
+    padding: 24px 16px !important;
+    margin-top: 20px !important;
+  }
+
+  .arogya-title {
+    font-size: 1.5rem !important;
+  }
+
+  .arogya-desc {
+    font-size: 0.88rem !important;
+  }
+
+  .arogya-feature-list li {
+    font-size: 0.84rem !important;
+  }
+
+  /* Product Catalog Mobile */
+  .catalog-filter-bar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    justify-content: center !important;
+    margin-bottom: 24px !important;
+  }
+
+  .catalog-filter-bar .filter-btn {
+    font-size: 0.78rem !important;
+    padding: 8px 14px !important;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Contact & Form Mobile */
+  .contact-grid,
+  .contact-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .contact-form-panel,
+  .contact-form-card {
+    padding: 24px 18px !important;
+  }
+
+  .contact-details-list {
+    gap: 14px !important;
+  }
+
+  .contact-item {
+    gap: 12px !important;
+  }
+
+  .contact-icon {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+  }
+
+  .contact-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .form-control {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+  }
+
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-metrics-strip {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .section-padded {
+    padding: 44px 0 !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+
+  .btn-lg {
+    width: 100% !important;
+    font-size: 0.9rem !important;
+    padding: 12px 16px !important;
   }
 }
 

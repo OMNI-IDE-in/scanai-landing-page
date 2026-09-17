@@ -19,6 +19,8 @@ html {
   scroll-padding-top: calc(var(--header-height) + 24px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -333,17 +335,18 @@ p {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: clamp(8px, 1.2vw, 18px);
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.82rem;
+  font-weight: 600;
   letter-spacing: -0.01em;
   color: #334155;
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -355,7 +358,8 @@ p {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .nav-text-link {
