@@ -158,12 +158,47 @@
           </div>
         </div>
 
-        <!-- Workstation Cockpit Frame -->
-        <div class="cockpit-showcase-frame">
-          <img src="./assets/omni_rovis_cockpit.png" alt="Omni Rovis Autonomous Surgical Workstation Cockpit Interface" />
-          <div class="cockpit-overlay-bar">
-            <span>OMNI ROVIS SURGICAL WORKSTATION &bull; REAL-TIME ANATOMICAL LOCK &bull; DYNAMIC COLLIMATION BOUNDARY</span>
-            <span style="color: #38bdf8; font-weight: 700;">60 FPS SERVO ACTIVE</span>
+        <!-- Omni Rovis Big-Tech Video Theater -->
+        <div class="video-theater-frame" id="rovis-video-showcase">
+          <div class="video-theater-topbar">
+            <div class="window-controls">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="theater-title">
+              Omni Rovis &bull; Autonomous Surgical AI &amp; 78% Radiation Reduction
+            </div>
+            <div class="theater-telemetry">
+              <span class="theater-badge">
+                <span class="pulse-dot"></span>
+                <span class="badge-text-full">4K UHD &bull; OFFICIAL PRESENTATION</span>
+                <span class="badge-text-short">4K UHD</span>
+              </span>
+            </div>
+          </div>
+          <div class="video-theater-screen">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/stXc_GGcRzI?rel=0&amp;modestbranding=1&amp;playsinline=1" 
+              title="Omni Rovis: Autonomous Surgical AI &amp; 78% Radiation Reduction for C-Arm Fluoroscopy" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-theater-bottombar">
+            <div class="video-theater-chapters">
+              <span class="chapter-tag"><span class="ch-num">01</span> Radiation Hazard</span>
+              <span class="chapter-tag"><span class="ch-num">02</span> TruBlock™ Collimation</span>
+              <span class="chapter-tag"><span class="ch-num">03</span> TensorRT 60 FPS Servoing</span>
+              <span class="chapter-tag"><span class="ch-num">04</span> Global Market Opportunity</span>
+            </div>
+            <a href="https://youtu.be/stXc_GGcRzI" target="_blank" rel="noopener" class="theater-yt-btn" title="Open and watch video on YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>Watch on YouTube</span>
+            </a>
           </div>
         </div>
       </div>
@@ -315,6 +350,15 @@
         </div>
         <div class="math-explanation">
           Omni Rovis maps the 2D image error vector <code>e = (u - u*, v - v*)^T</code> into continuous C-arm and collimator velocity commands <code>v_c</code>. The interaction matrix <code>J</code> represents the analytical image Jacobian relating differential image motion to robot kinematics. When approaching kinematic singularities or boundary conditions, the damping factor <code>&lambda;</code> inflates adaptively, ensuring smooth, jitter-free trajectory following with zero overshoot. A dual-channel hardware watchdog interlock halts all actuation within 6 ms if perception confidence drops below 95%.
+        </div>
+      </div>
+
+      <!-- Live Surgical Cockpit Telemetry Showcase -->
+      <div class="cockpit-showcase-frame" style="margin-top: 36px;">
+        <img src="./assets/omni_rovis_cockpit.png" alt="Omni Rovis Autonomous Surgical Workstation Cockpit Interface" />
+        <div class="cockpit-overlay-bar">
+          <span>OMNI ROVIS SURGICAL WORKSTATION &bull; REAL-TIME ANATOMICAL LOCK &bull; DYNAMIC COLLIMATION BOUNDARY</span>
+          <span style="color: #38bdf8; font-weight: 700;">60 FPS SERVO ACTIVE</span>
         </div>
       </div>
     </div>
