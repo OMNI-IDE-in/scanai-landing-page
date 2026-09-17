@@ -494,9 +494,9 @@ html, body {
     letter-spacing: 0.02em !important;
   }
 
-  .theater-badge {
-    padding: 3px 8px !important;
-    font-size: 0.62rem !important;
+  .theater-top-link {
+    padding: 4px 9px !important;
+    font-size: 0.68rem !important;
     gap: 5px !important;
   }
 
@@ -504,7 +504,7 @@ html, body {
     flex-direction: column !important;
     align-items: stretch !important;
     padding: 10px 14px !important;
-    gap: 10px !important;
+    gap: 8px !important;
   }
 
   .video-theater-chapters {
@@ -528,11 +528,9 @@ html, body {
     padding: 4px 8px !important;
   }
 
-  .theater-yt-btn {
-    justify-content: center !important;
-    width: 100% !important;
-    padding: 7px 12px !important;
-    font-size: 0.72rem !important;
+  .theater-channel-tag {
+    text-align: center !important;
+    font-size: 0.68rem !important;
   }
 
   /* Cockpit Frame Mobile */
@@ -748,12 +746,16 @@ html, body {
   }
 
   /* Video Theater Extra Compact (<480px) */
-  .badge-text-full {
+  .theater-top-link .top-link-text {
     display: none !important;
   }
 
-  .badge-text-short {
-    display: inline !important;
+  .theater-top-link svg.arrow-icon {
+    display: none !important;
+  }
+
+  .theater-top-link {
+    padding: 4px 7px !important;
   }
 
   .video-theater-topbar {
