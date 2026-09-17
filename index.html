@@ -12,6 +12,23 @@
   <meta property="og:image" content="./assets/omni_rovis_cockpit.png" />
   <meta property="og:type" content="website" />
 
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (var i = 0; i < regs.length; i++) { regs[i].unregister(); }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (var i = 0; i < names.length; i++) { caches.delete(names[i]); }
+      });
+    }
+  </script>
+
   <link rel="icon" type="image/png" href="./assets/logo.png" />
 
   <!-- Single Clean Font: Inter -->
@@ -32,7 +49,7 @@
        ======================================================================== -->
   <header class="site-header" id="siteHeader">
     <div class="container nav-container">
-      <a href="./index.html" class="brand-logo" aria-label="ScanAI Home">
+      <a href="/" class="brand-logo" aria-label="ScanAI Home">
         <img src="./assets/logo.png" alt="ScanAI Healthcare Logo" />
       </a>
 
@@ -69,7 +86,7 @@
   <div class="drawer-backdrop"></div>
   <aside class="mobile-drawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
-      <img src="./assets/logo.png" alt="ScanAI Logo" style="height: 28px;" />
+      <a href="/" aria-label="ScanAI Home"><img src="./assets/logo.png" alt="ScanAI Logo" style="height: 28px;" /></a>
       <button class="drawer-close" aria-label="Close Menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>

@@ -2,6 +2,25 @@
  * ScanAI Medical Technology - Core Application Logic (main.js)
  */
 
+// Purge any legacy service workers and caches from previous site iterations
+function purgeLegacyCache() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (const registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+  if ('caches' in window) {
+    caches.keys().then((names) => {
+      for (const name of names) {
+        caches.delete(name);
+      }
+    });
+  }
+}
+purgeLegacyCache();
+
 document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initMobileDrawer();
