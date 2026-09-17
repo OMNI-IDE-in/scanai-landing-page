@@ -1,6 +1,6 @@
 /**
  * ScanAI - Verified Enterprise Products & Clinical Systems Dataset
- * Exclusive focus on Omni Rovis (Flagship Surgical AI) & Arogya Omni (Hospital OS & NHCX Engine)
+ * Exclusive focus on Omni Rovis (Flagship Surgical AI) & Arogya Connect (Hospital OS & NHCX Engine)
  * Source of truth: rovis.omniide.com & arogya.scanai.health
  */
 
@@ -37,8 +37,8 @@ window.ScanAIProducts = [
     detailedDescription: "Omni Rovis eliminates the surgical 'manual reset tax' (12–18 operator pauses per procedure) caused by tidal diaphragmatic excursion and patient drift. Powered by a unified 5-task TensorRT vision backbone and the TruBlock standalone lead shutter collimator, it dynamically tracks duodenoscopes, guidewires, and extraction baskets in real time, dramatically cutting occupational scatter radiation while keeping the 300 kg hospital C-arm completely frozen."
   },
   {
-    id: "arogya-omni",
-    name: "Arogya Omni",
+    id: "arogya-connect",
+    name: "Arogya Connect",
     tagline: "ABDM M1–M4 Certified Hospital OS & AI NHCX Claims Engine",
     category: "hospital-os",
     categoryLabel: "Hospital OS & Health Exchange",
@@ -65,6 +65,6 @@ window.ScanAIProducts = [
       { label: "Payer Coverage", value: "Star Health, HDFC ERGO, Care Health & More" },
       { label: "Deployment Model", value: "High-Availability Cloud-Native Infrastructure" }
     ],
-    detailedDescription: "Arogya Omni unifies clinical care workflows, hospital bed telemetry, and healthcare financing into a single resilient operating platform. Designed for modern multi-specialty hospitals and clinics, it automates paperless ABHA patient onboarding, instant diagnostic record linking, and cashless NHCX insurance claims processing under India's national health stack."
+    detailedDescription: "Arogya Connect unifies clinical care workflows, hospital bed telemetry, and healthcare financing into a single resilient operating platform. Designed for modern multi-specialty hospitals and clinics, it automates paperless ABHA patient onboarding, instant diagnostic record linking, and cashless NHCX insurance claims processing under India's national health stack."
   }
 ];
